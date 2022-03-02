@@ -11,7 +11,7 @@ jobs:
     name: Validate
     
     steps:
-        - uses: "actions/checkout@v2"
+        - uses: "actions/checkout@v3"
         - name: HACS validation
           uses: "hacs/action@main"
           with:
@@ -29,7 +29,7 @@ jobs:
       name: release
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
       with:
         fetch-depth: 0
     - name: Python Semantic Release
